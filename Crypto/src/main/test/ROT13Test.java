@@ -23,11 +23,17 @@ public class ROT13Test {
     public void rotateStringTest1() {
         // Given
         String s1 = "ABCDEF";
-        String s2 = "DEFABC";
+//        String s1 = "AZaz";
+//        String s1 = "ABXYZ";
+//        String s1 = "AZ!az";
+//        String s1 = "C";
+//        String s2 = "DEFABC";
+        String s2 = "DEFGHI";
 
         // When
         ROT13 cipher = new ROT13();
         String actual = cipher.rotate(s1, 'D');
+//        String actual = cipher.rotate(s1, 'C');
 
         // Then
         assertTrue(actual.equals(s2));
